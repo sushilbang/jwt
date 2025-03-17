@@ -75,7 +75,6 @@ npm run dev
 
 ### Start Frontend
 ```sh
-cd client
 npm run dev
 ```
 
@@ -84,8 +83,7 @@ npm run dev
 ## 🏗️ Project Structure
 
 ```
-📦 auth-jwt-system
- ┣ 📂 client (React Frontend)
+📦 JWT_Authentication
  ┃ ┣ 📂 src
  ┃ ┃ ┣ 📂 components
  ┃ ┃ ┣ 📂 context
