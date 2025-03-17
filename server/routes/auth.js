@@ -6,7 +6,7 @@ import authMiddleware from "../middleware/authMiddleware.js";
 
 // Register
 router.post('/register', async (req, res) => {
-    console.log("Register route hit");
+    // console.log("Register route hit");
     const {email, password} = req.body;
 
     if (!email || !password) {
@@ -15,6 +15,7 @@ router.post('/register', async (req, res) => {
     try {
         const user = new User({ email, password });
         await user.save();
+        res.status(201).json({ message: "User registered successfully" });
     } catch (error) {
         res.status(400).json({message: error.message});
     }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -12,6 +13,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const response = await axios.post("/api/auth/register", { email, password });
+      // console.log(response);
       toast.success("Registered successfully! ✅ Please log in.");
       if (response.status === 201) {
         navigate("/login");
