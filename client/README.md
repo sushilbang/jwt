@@ -1,53 +1,53 @@
-# 🔐 React Authentication System with JWT & MongoDB
+# React Authentication System with JWT & MongoDB
 
 This project is a **JWT-based authentication system** built using:
 
 - **Frontend:** React (Vite) + Context API + Tailwind CSS + React Toastify
 - **Backend:** Node.js + Express.js + MongoDB (Mongoose) + JWT
 
-## 🚀 Features
+## Features
 
-- ✅ **User Registration** (Stores hashed passwords using bcrypt)
-- ✅ **User Login** (Generates JWT Token)
-- ✅ **Protected Routes** (Using JWT authentication middleware)
-- ✅ **Persistent Authentication** (Token stored in localStorage)
-- ✅ **User Logout**
-- ✅ **Real-time Notifications** (Using React Toastify for popups)
+- **User Registration** (Stores hashed passwords using bcrypt)
+- **User Login** (Generates JWT Token)
+- **Protected Routes** (Using JWT authentication middleware)
+- **Persistent Authentication** (Token stored in localStorage)
+- **User Logout**
+- **Real-time Notifications** (Using React Toastify for popups)
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 ```sh
 git clone https://github.com/your-username/auth-jwt-system.git
 cd auth-jwt-system
 ```
 
-### 2️⃣ Install Dependencies
-#### 🔹 Backend
+### Install Dependencies
+#### Backend
 ```sh
 cd server
 npm install
 ```
 
-#### 🔹 Frontend
+#### Frontend
 ```sh
 npm install
 ```
 
 ---
 
-## 🛠️ Configuration
+## Configuration
 
-### 🔹 Backend - Create a **.env** File in `/server` Directory
+### Backend - Create a **.env** File in `/server` Directory
 ```env
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
-### 🔹 Frontend - Set Proxy (Already Configured in `vite.config.js`)
+### Frontend - Set Proxy (Already Configured in `vite.config.js`)
 
 Vite is set to proxy `/api` requests to `http://localhost:5000`.
 
@@ -65,7 +65,7 @@ server: {
 
 ---
 
-## ▶️ Running the App
+## Running the App
 
 ### Start Backend
 ```sh
@@ -80,7 +80,7 @@ npm run dev
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 📦 JWT_Authentication
@@ -103,9 +103,9 @@ npm run dev
 
 ---
 
-## 🔑 API Endpoints
+## API Endpoints
 
-### 📝 Authentication Routes
+### Authentication Routes
 
 | Method | Endpoint        | Description               |
 |--------|----------------|---------------------------|
@@ -115,7 +115,7 @@ npm run dev
 
 ---
 
-## 🎨 Frontend - Toast Notifications Example
+## Frontend - Toast Notifications Example
 
 ```js
 import { toast } from "react-toastify";
@@ -126,11 +126,11 @@ toast.error("Invalid credentials! ❌");
 
 ---
 
-## 🤝 Contributing
+## Contributing
 Feel free to submit issues or pull requests. 🚀
 
 ---
 
-## 📜 License
+## License
 This project is licensed under the MIT License.
 
